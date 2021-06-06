@@ -1,0 +1,8 @@
+<p-card>
+  <img src="{{product.defaultImage}}" [alt]="product.name" class="product-image" />
+  <p>{{ product.name }}</p>
+  <p>{{ product.price | currency: "USD" }} &nbsp;&nbsp; Discount : {{product.discount | currency: "USD"}}</p>
+  <ng-template pTemplate="footer" class="price">
+    <p-button label="Add" icon="pi pi-plus"></p-button>
+  </ng-template>
+</p-card>

@@ -1,0 +1,18 @@
+<nav>
+<p-carousel [value]="recommendedProducts" [numVisible]="1" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions">
+  <ng-template let-product pTemplate="item">
+    <div class="product-item">
+      <div class="product-item-content">
+        <div class="p-mb-3">
+          <img src="{{product.defaultImage}}" [alt]="product.name" class="product-image" />
+        </div>
+        <div class="product-detail">
+          <h4 class="p-mb-1">{{product.name}}</h4>
+           <p class="product-badge">{{product.description}}</p>
+            <h5 class="p-mt-0 p-mb-3">Price : {{product.price | currency:'USD'}} &nbsp;&nbsp;Discount : {{product.discount | currency:'USD'}}</h5>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
+</nav>

@@ -1,0 +1,25 @@
+.product-item {
+  .product-item-content {
+    margin: 5px;
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+  }
+  .product-image {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: 100% !important;
+    height: 150px !important;
+    object-fit: cover;
+    margin-top: -8px;
+    opacity: 0.5;
+    border-radius: 5px;
+  }
+  .product-detail {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+  }
+}

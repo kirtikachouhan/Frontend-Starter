@@ -1,0 +1,11 @@
+<div class="progress-bar">
+  <p-progressSpinner *ngIf="showLoader"></p-progressSpinner>
+</div>
+<div class="p-grid products-list-item">
+  <div class="p-col-12 p-md-6 p-lg-3" app-products-list-item *ngFor="let item of productsList" [product]="item">
+  </div>
+</div>
+<div *ngIf="showEmptyProductMessage">No items found</div>
+<p-paginator [rows]="12" [totalRecords]="totalRecords" (onPageChange)="paginateData($event)"
+  [rowsPerPageOptions]="[12,24,36]">
+</p-paginator>
